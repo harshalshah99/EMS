@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.Data", "EMS.Data\EMS.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.ViewModel", "EMS.ViewModel\EMS.ViewModel.csproj", "{981939C7-F418-4621-859B-6027BBD5A657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.Business", "EMS.Business\EMS.Business.csproj", "{859E22D0-0E38-4016-A0D3-705FD9824784}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.Manager", "EMS.Business\EMS.Manager.csproj", "{859E22D0-0E38-4016-A0D3-705FD9824784}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,12 +12,7 @@ namespace EMS.Data.Repository
     {
         private PracticeDBEntities _db;
         private IDbSet<T> _dbSet;
-
-        public GenericRepository() {
-            _db = new PracticeDBEntities();
-            _dbSet = _db.Set<T>();
-        }
-
+        
         public GenericRepository(PracticeDBEntities db)
         {
             _db = db;
@@ -49,9 +44,6 @@ namespace EMS.Data.Repository
             return _dbSet.Attach(obj);
         }
 
-        public int Save()
-        {
-            return _db.SaveChanges();
-        }
+        
     }
 }

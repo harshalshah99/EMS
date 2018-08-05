@@ -18,7 +18,5 @@ namespace EMS.Data.Repository
 
         T Delete(T obj);
 
-        int Save();
-
     }
 }

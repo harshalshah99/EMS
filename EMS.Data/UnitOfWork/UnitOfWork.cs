@@ -8,18 +8,19 @@ using EMS.Data.Repository;
 
 namespace EMS.Data.UnitOfWork
 {
-    class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         PracticeDBEntities _db;
         GenericRepository<City> _cityRepository;
         GenericRepository<Employee> _employeeRepository;
-        
-        UnitOfWork(PracticeDBEntities db)
-        {
-            _db = db;
-        }
 
-        public IGenericRepository<City> cities
+        public UnitOfWork()
+        {
+            _db = new PracticeDBEntities();
+        }
+        
+
+        public IGenericRepository<City> Cities
         {
             get
             {
@@ -41,6 +42,11 @@ namespace EMS.Data.UnitOfWork
                 }
                 return _employeeRepository;
             }
+        }
+
+        public int Save()
+        {
+            return _db.SaveChanges();
         }
     }
 }

@@ -10,9 +10,11 @@ namespace EMS.Data.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        IGenericRepository<City> cities { get; }
+        IGenericRepository<City> Cities { get; }
 
         IGenericRepository<Employee> Employees { get; }
+
+        int Save();
 
     }
 }
